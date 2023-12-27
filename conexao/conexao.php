@@ -1,12 +1,9 @@
 <?php
-    $drive="mysql";
-    $hostname="localhost";
+    $dsn="mysql:host=localhost;dbname=bancoDeDados";
     $username="root";
     $password="admin1234";
-    $dbname="";
     try{
-        $conn=new PDO("$drive:host=$hostname;dbname=$dbname",$username,$password);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $conn=new PDO($dsn,$username,$password);
     }catch(Exception $erro){
-        echo "ERRO: ".$erro->getMessage();
+        echo "ERRO! <br> Código: ".$erro->getCode()."<br> Mensagem: ".$erro->getMessage();
     }
