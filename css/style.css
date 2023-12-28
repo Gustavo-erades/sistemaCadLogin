@@ -1,6 +1,9 @@
-.caixa-texto-borda-redonda{
-    border-radius: 150px 12px 12px 150px;
+.caixa-conteudo-forms{
+    border: 1px solid red;box-shadow: 0 0 8px  #00000067
 }
 .caixa-forms-login{
     border-radius:12px;
+}
+.caixa-texto-borda-redonda{
+    border-radius: 150px 12px 12px 150px;
 }
