@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Cadastro</title>
 </head>
 <body>
-    <div>
-        <div>
-            <div>
-                <form action="" method="post">
+    <div class="container">
+        <div class="grid">
+            <div class="row bg-light caixa-conteudo-forms">
+                <form action="" method="post" class="col-6 bg-light caixa-forms-login">
                     <div>
                         <label for="inputNome">Nome</label>
                         <input type="text" name="nome" id="inputNome">
@@ -29,7 +30,7 @@
                     </div>
                     <div>
                         <label for="inputDtNasc">Data de nascimento</label>
-                        <input type="datetime" name="dtNasc" id="inputDtNasc">
+                        <input type="date" name="dtNasc" id="inputDtNasc">
                     </div>
                     <div>
                         <label for="inputContato">Contato</label>
@@ -47,16 +48,16 @@
                         <label for="inputConfSenha">Confirmar senha</label>
                         <input type="password" name="confSenha" id="inputConfSenha">
                     </div>
-                    <button type="submit" name="fazerLogin">
+                    <button type="submit" name="fazerLogin" class="btn bg-dark text-light">
                         Fazer cadastro
                     </button>
                 </form>
-            </div>
-            <div>
-                <h3>Cadastro</h3>
-                <p>
-                    Já possui um cadastro? <a href="../index.html">faça seu login</a></p>
-                </p>
+                <div class="col-6 bg-dark text-light caixa-texto-borda-redonda">
+                    <h3>Cadastro</h3>
+                    <p>
+                        Já possui um cadastro? <a href="../index.html">faça seu login</a></p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>

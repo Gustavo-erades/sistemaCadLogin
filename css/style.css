@@ -1,9 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f9f9f9;
+}
+.container{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .caixa-conteudo-forms{
-    border: 1px solid red;box-shadow: 0 0 8px  #00000067
+    box-shadow: 0 0 8px  #00000067;
+    border-radius: 12px;
+    margin: 0 10px;
+    text-align: center;
 }
 .caixa-forms-login{
     border-radius:12px;
 }
 .caixa-texto-borda-redonda{
-    border-radius: 150px 12px 12px 150px;
+    border-radius: 250px 12px 12px 250px;
+    padding-left: 30px;
 }
