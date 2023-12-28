@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Login</title>
 </head>
 <body>
-    <div>
-        <div>
-            <div>
-                <form action="" method="post">
+    <div class="container">
+        <div class="grid">
+            <div class="row bg-light">
+                <form action="" method="post" class="col-6 bg-light caixa-forms-login">
                     <div>
                         <label for="inputEmail">E-mail</label>
                         <input type="email" name="email" id="inputEmail">
@@ -19,19 +20,19 @@
                         <label for="inputSenha">Senha</label>
                         <input type="password" name="senha" id="inputSenha">
                     </div>
-                    <button type="submit" name="fazerLogin">
+                    <button type="submit" name="fazerLogin" class="btn bg-info text-light">
                         Entrar
                     </button>
                 </form>
-            </div>
-            <div>
-                <h3>Login</h3>
-                <p>
-                    Esqueceu a senha? <a href="">recupere aqui</a></p>
-                </p>
-                <p>
-                    Não possui um login? <a href="./public/cadastro.html">faça seu cadastro</a></p>
-                </p>
+                <div class="col-6 bg-info text-light caixa-texto-borda-redonda">
+                    <h3>Login</h3>
+                    <p>
+                        Esqueceu a senha? <a href="">recupere aqui</a></p>
+                    </p>
+                    <p>
+                        Não possui um login? <a href="./public/cadastro.html">faça seu cadastro</a></p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
