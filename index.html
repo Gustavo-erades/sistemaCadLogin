@@ -12,25 +12,27 @@
         <div class="grid">
             <div class="row bg-light caixa-conteudo-forms">
                 <form action="" method="post" class="col-6 bg-light caixa-forms-login">
-                    <div>
+                    <div class="form-group">
                         <label for="inputEmail">E-mail</label>
-                        <input type="email" name="email" id="inputEmail">
+                        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="exemplo@dominio.com">
                     </div>
-                    <div>
+                    <div class="form-group">
                         <label for="inputSenha">Senha</label>
-                        <input type="password" name="senha" id="inputSenha">
+                        <input type="password" name="senha" id="inputSenha" class="form-control" placeholder="sua senha">
                     </div>
-                    <button type="submit" name="fazerLogin" class="btn bg-dark text-light">
-                        Entrar
-                    </button>
-                </form>
-                <div class="col-6 bg-dark text-light caixa-texto-borda-redonda">
-                    <h3>Login</h3>
+                    <input type="submit" name="fazerLogin" class="form-control btn bg-dark text-light" value="entrar">
                     <p>
                         Esqueceu a senha? <a href="">recupere aqui</a></p>
                     </p>
-                    <p>
-                        Não possui um login? <a href="./public/cadastro.html">faça seu cadastro</a></p>
+                </form>
+                <div class="col-6 bg-dark text-light caixa-texto-borda-redonda">
+                    <img src="user.png" alt="" width="50px">
+                    <h3>Login</h3>
+                    <p id="form-subtitulo">
+                        Acesse sua conta. Faça o login!
+                    </p>
+                    <p class="link-forms">
+                        Não possui login? <a href="./public/cadastro.html">faça seu cadastro</a></p>
                     </p>
                 </div>
             </div>

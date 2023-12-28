@@ -19,10 +19,39 @@ body{
     margin: 0 10px;
     text-align: center;
 }
+/* esquerda do formulário de login, os inputs */
 .caixa-forms-login{
     border-radius:12px;
+    padding-top:10px;
 }
+.caixa-forms-login label{
+    float: left;   
+}
+input.form-control:focus{
+    border: none;
+    box-shadow: none;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.caixa-forms-login .btn{
+    margin-bottom:8px;
+}
+/* direita do formulário de login, texto */
 .caixa-texto-borda-redonda{
-    border-radius: 250px 12px 12px 250px;
-    padding-left: 30px;
+    border-radius: 0 12px 12px 0;
+    padding-top: 10px;
+}
+.caixa-texto-borda-redonda h3{
+    font-size:2em;
+    margin-bottom: 20px;
+}
+#form-subtitulo{
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+.link-forms{
+    margin-top: 80px;
+    font-size: 0.9em;
 }
